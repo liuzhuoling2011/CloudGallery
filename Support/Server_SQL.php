@@ -8,7 +8,7 @@
 
 header("Content-Type:application/json;charset=utf-8");
 
-require_once ("conf.php");
+require_once("conf.php");
 $link = CONNECT();
 
 if(isset($_POST["deleteFolder"])){

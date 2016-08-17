@@ -80,6 +80,6 @@ if(isset($_GET['folder'])){
     <script src="Public/jquery.min.js"></script>
     <script src="Semantic/semantic.js"></script>
     <script src="Public/sweetalert.min.js"></script>
-    <script src="sidebar.js"></script>
-    <script src="showVideo.js"></script>
+    <script src="Support/sidebar.js"></script>
+    <script src="Support/showVideo.js"></script>
 </body>

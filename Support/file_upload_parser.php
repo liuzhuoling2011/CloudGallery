@@ -6,8 +6,8 @@
  * Time: 12:58
  */
 
-require_once ("resizeImage.php");
-require_once ("conf.php");
+require_once("resizeImage.php");
+require_once("conf.php");
 $link = CONNECT();
 
 if($_POST['createFolder'] != NULL){
@@ -65,6 +65,7 @@ if(isset($_FILES["videos"])){
     }
 
     $targetPath = $DIR."/".$targetFile;
+    echo $targetPath."<br>";
 
     if(move_uploaded_file($fileTmpLoc, $targetPath)){
         $query = "select d_id from description where title='".$title."' and description='".$description."'";

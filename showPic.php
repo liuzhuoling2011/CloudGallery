@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="Semantic/semantic.css">
     <link rel="stylesheet" href="Public/IdealSlider/ideal-image-slider.css">
     <link rel="stylesheet" href="Public/sweetalert.css">
-    <link rel="stylesheet" href="showPic.css">
+    <link rel="stylesheet" href="Support/showPic.css">
 </head>
 
 <body>
@@ -75,8 +75,8 @@
 <script src="Public/IdealSlider/ideal-image-slider.js"></script>
 <script src="Public/IdealSlider/iis-captions.js"></script>
 <script src="Public/sweetalert.min.js"></script>
-<script src="sidebar.js"></script>
-<script src="showPic.js"></script>
+<script src="Support/sidebar.js"></script>
+<script src="Support/showPic.js"></script>
 <script>
     $(".row").hover(function(){
         $(this).find("a").css("display", "block");

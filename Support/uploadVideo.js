@@ -117,7 +117,7 @@ function deleteFile(fileName){
 }
 function loadFolder() {
     $.ajax({
-        url: 'Server_SQL.php?TYPE=vfolder',
+        url: 'Support/Server_SQL.php?TYPE=vfolder',
         data: {},
         async: true,
         type: 'get',

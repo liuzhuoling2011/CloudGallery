@@ -132,7 +132,7 @@ function deleteFile(fileName){
 }
 function loadFolder() {
     $.ajax({
-        url: 'Server_SQL.php?TYPE=folder',
+        url: 'Support/Server_SQL.php?TYPE=folder',
         data: {},
         async: true,
         type: 'get',
@@ -230,7 +230,7 @@ function uploadFile() {
     ajax.addEventListener("load", completeHandler, false);
     ajax.addEventListener("error", errorHandler, false);
     ajax.addEventListener("abort", abortHandler, false);
-    ajax.open("POST", "file_upload_parser.php");
+    ajax.open("POST", "Support/file_upload_parser.php");
     ajax.send(formdata);
 }
 function progressHandler(event) {

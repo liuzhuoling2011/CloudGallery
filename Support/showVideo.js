@@ -78,7 +78,7 @@ function defaultLoad(FLAG) {
     }
 
     $.ajax({
-        url: 'Server_SQL.php?TYPE=video&folder='+FOLDER,
+        url: 'Support/Server_SQL.php?TYPE=video&folder='+FOLDER,
         data: {},
         async: true,
         type: 'get',
@@ -100,7 +100,7 @@ function defaultLoad(FLAG) {
 
 function loadFolder(){
     $.ajax({
-        url: 'Server_SQL.php?TYPE=vfolder',
+        url: 'Support/Server_SQL.php?TYPE=vfolder',
         data: {},
         async: true,
         type: 'get',

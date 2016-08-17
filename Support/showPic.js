@@ -81,7 +81,7 @@ function defaultLoad(FLAG) {
     loadFolder();
 
     $.ajax({
-        url: 'Server_SQL.php?TYPE=image&folder='+FOLDER,
+        url: 'Support/Server_SQL.php?TYPE=image&folder='+FOLDER,
         data: {},
         async: true,
         type: 'get',
@@ -101,7 +101,7 @@ function defaultLoad(FLAG) {
 }
 function loadFolder(){
     $.ajax({
-        url: 'Server_SQL.php?TYPE=folder',
+        url: 'Support/Server_SQL.php?TYPE=folder',
         data: {},
         async: true,
         type: 'get',
@@ -165,7 +165,7 @@ function deletePic(id){
         closeOnConfirm: false
     }, function () {
         $.ajax({
-            url: 'Server_SQL.php',
+            url: 'Support/Server_SQL.php',
             data: {deletePicID: id},
             async: true,
             type: 'post',
@@ -211,7 +211,7 @@ function revisePic(id,title,desc){
                     var picTitle = $("#PicTitle")[0].value;
                     var picDesc = $("#PicDesc")[0].value;
                     $.ajax({
-                        url: 'Server_SQL.php',
+                        url: 'Support/Server_SQL.php',
                         data: {revisePicID: id,revisePicTitle: picTitle, revisePicDesc: picDesc},
                         async: true,
                         type: 'post',

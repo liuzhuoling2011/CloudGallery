@@ -18,8 +18,8 @@ function CONNECT(){
         return $link;
 }
 
-$PICTURES = "./Upload/Pictures/";
-$VIDEO = "./Upload/Video/";
+$PICTURES = "../Upload/Pictures/";
+$VIDEO = "../Upload/Video/";
 
 function image_fix_orientation($filename) {
         $exif = exif_read_data($filename);
